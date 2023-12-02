@@ -33,7 +33,7 @@ const Home = () => {
             backgroundColor: COLORS.primary,
           },
           headerShadowVisible: false,
-          headerTitle: "Avandra",
+          headerTitle: "",
           headerTitleStyle: {
             color: COLORS.white,
             flex: 1,
@@ -43,8 +43,9 @@ const Home = () => {
             alignItems: "center",
             textAlign: "center",
           },
-          headerTitleColor: COLORS.white,
+          headerBackImageSource: icons.logotype02,
           headerTransparent: false,
+          headerRight: {},
         }}
       />
       <View
@@ -69,8 +70,8 @@ const Home = () => {
         style={{ backgroundColor: COLORS.gray }}
       >
         <View style={{ flex: 1, padding: SIZES.small }}>
-          <ForYouRestaurants />
-          <Welcome />
+          {/* <ForYouRestaurants />
+          <Welcome /> */}
         </View>
       </ScrollView>
     </SafeAreaView>

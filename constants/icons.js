@@ -9,6 +9,10 @@ import location from "../assets/icons/location.png";
 import chevronLeft from "../assets/icons/chevron-left.png";
 import chevronRight from "../assets/icons/chevron-right.png";
 import star from "../assets/icons/star.png";
+import letter_01 from "../assets/icons/letter_01.png";
+import letter_02 from "../assets/icons/letter_02.png";
+import logotype01 from "../assets/icons/logotype_01.png";
+import logotype02 from "../assets/icons/logotype_02.png";
 
 export default {
   heart,
@@ -22,4 +26,8 @@ export default {
   chevronLeft,
   chevronRight,
   star,
+  letter_01,
+  letter_02,
+  logotype01,
+  logotype02,
 };

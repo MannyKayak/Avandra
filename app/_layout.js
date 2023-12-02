@@ -8,10 +8,16 @@ SplashScreen.preventAutoHideAsync();
 
 const Layout = () => {
   const [fontsLoaded] = useFonts({
-    DMBold: require("../assets/fonts/DMSans-Bold.ttf"),
-    DMMedium: require("../assets/fonts/DMSans-Medium.ttf"),
-    DMRegular: require("../assets/fonts/DMSans-Regular.ttf"),
+    RobotoBold: require("../assets/fonts/Inter-Bold.ttf"),
+    RobotoMedium: require("../assets/fonts/Inter-Medium.ttf"),
+    RobotoRegular: require("../assets/fonts/Inter-Regular.ttf"),
+    default: require("../assets/fonts/Roboto-Regular.ttf"),
   });
+  if (fontsLoaded) {
+    console.log("font loaded successfully");
+  } else {
+    console.log("font not loaded");
+  }
   const onLayoutRootView = useCallback(async () => {
     if (fontsLoaded) {
       await SplashScreen.hideAsync();
